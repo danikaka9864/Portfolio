@@ -1,0 +1,1160 @@
+<html>
+
+<head>
+   <title>My first page</title>
+   <link rel="stylesheet" href="Style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+      integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+      integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+   <style>
+      
+      .circleBar {
+
+         alignment-baseline: central;
+         text-anchor: middle;
+         font-size: 12px;
+         font-family: 'Montserrat', sans-serif;
+         font-weight: 800;
+  }
+      
+
+      .circleBar .round {
+         min-height: 241px;
+         
+         position: relative;
+        
+      }
+
+      .circleBar .round strong {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin-top: -80px;
+         transform: translate(-50%);
+         font-size: 40px;
+         color: #007DA5;
+         font-weight: 600;
+      }
+
+      .col-md-12{
+
+         padding: 0;
+      }
+
+
+     
+   </style>
+
+      
+   <!-- //dropdown// -->
+   <style>
+      .dropbtn {
+        background-color: #fff;
+        width: 112px;
+        height: 40px;
+        border-radius: 10px;
+        font-size: 16px;
+        border: none;
+        
+      }
+      
+      .project-dropdown {
+        
+         display: flex;
+         flex-direction: column;
+         align-items: flex-end;
+         position: relative;
+      }
+      
+      .dropdown-content {
+         
+         position: relative;
+         margin-top: 10px;
+         padding: 5px;
+         background-color: #fff;
+         border-radius: 10px;
+         z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+         background-color: #eff9ff;
+         border-radius: 10px;        
+         }
+      
+      .project-dropdown:hover .dropdown-content {display: block;}
+      
+      .project-dropdown:hover .dropdown-content {background-color: #fff;}
+      
+      </style>
+
+
+   
+</head>
+
+<body class="dashboard">
+   <div class="overlay"></div>
+   <div class="sidebar">
+      <div class="header">
+         <div class="logo-wrapper">
+            <img src="assets/imgs/Logo-1.svg" alt="">
+         </div>
+         <i class="menu-bar">
+            <img src="assets/imgs/Menu_Alt_01.svg" alt="">
+         </i>
+      </div>
+      <div>
+         <div class="navigation">
+            <ul>
+               <li><a href="#" class="nav-item active"><img src="assets/imgs/Home.svg"> Dashboard</a></li>
+               <li><a href="#" class="nav-item"><img src="assets/imgs/Projects.svg"> Projects</a></li>
+               <li><a href="#" class="nav-item"><img src="assets/imgs/Chart.svg"> Tasks</a></li>
+               <li><a href="#" class="nav-item"><img src="assets/imgs/users-three-Light.svg"> Users</a></li>
+               <li><a href="#" class="nav-item"><img src="assets/imgs/Chat.svg"> Chat</a></li>
+               <li><a href="#" class="nav-item"><img src="assets/imgs/chart-pie-Light.svg"> Analytics</a></li>
+               <li><a href="#" class="nav-item"><img src="assets/imgs/Document.svg"> Invoices</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   <div class="content">
+      <div class="top-bar">
+         <div class="search-icon"><img src="assets/imgs/Search.svg" alt=""></div>
+         <div class="language-icon-wrapper">
+            <img src="assets/imgs/flag.png" alt="">
+            <h1>English</h1>
+         </div>
+
+         <div class="notification-icon"><img src="assets/imgs/Notification.svg" alt=""></div>
+         <div class="user-name">
+            <h1>John Doe</h1>
+            <h2>Admin</h2>
+         </div>
+         <div class="user-img"> <img src="assets/imgs/Ellipse 177.png" alt=""></div>
+      </div>
+      <div class="box-wrapper">
+         <div class="hello-name">
+            <h1>Hello John !</h1>
+            <p>Welcome Back! Have a nice day.</p>                           
+             
+         </div>
+         <div class="progress-blocks">
+            <div class="status-box">
+               <div class="progress-status">
+                  <div class="skills_section text-center">
+                     <div class="skills-area">
+                        <div class="single-skill">
+                           <div class="circlechart" data-percentage="92"><svg class="circle-chart"
+                                 viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                                 <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
+                                 <circle class="circle-chart__circle complete-stroke" stroke-dasharray="92,100"
+                                    cx="16.9" cy="16.9" r="15.9"></circle>
+                                 <g class="circle-chart__info"> <text class="circle-chart__percent" x="17.9"
+                                       y="15.5">92%</text></g>
+                              </svg></div>
+
+                           <div class="complete-result">
+                              <h1>Complete</h1>
+                              <h2>$742</h2>
+                           </div>
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="progress-status">
+                  <div class="skills_section text-center">
+                     <div class="skills-area">
+                        <div class="single-skill">
+                           <div class="circlechart" data-percentage="92"><svg class="circle-chart"
+                                 viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                                 <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
+                                 <circle class="circle-chart__circle cancel-stroke" stroke-dasharray="92,100" cx="16.9"
+                                    cy="16.9" r="15.9"></circle>
+                                 <g class="circle-chart__info"> <text class="circle-chart__percent" x="17.9"
+                                       y="15.5">92%</text></g>
+                              </svg></div>
+
+                           <div class="cancel-result">
+                              <h1>Cancel</h1>
+                              <h2>$150K</h2>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="status-box">
+               <div class="progress-status">
+                  <div class="skills_section text-center">
+                     <div class="skills-area">
+                        <div class="single-skill">
+                           <div class="circlechart" data-percentage="92"><svg class="circle-chart"
+                                 viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                                 <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
+                                 <circle class="circle-chart__circle progress-stroke" stroke-dasharray="92,100"
+                                    cx="16.9" cy="16.9" r="15.9"></circle>
+                                 <g class="circle-chart__info"> <text class="circle-chart__percent" x="17.9"
+                                       y="15.5">92%</text></g>
+                              </svg></div>
+                           <div class="progress-result">
+                              <h1>In Process</h1>
+                              <h2>23</h2>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="progress-status">
+                  <div class="skills_section text-center">
+                     <div class="skills-area">
+                        <div class="single-skill">
+                           <div class="circlechart" data-percentage="92"><svg class="circle-chart"
+                                 viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+                                 <circle class="circle-chart__background" cx="16.9" cy="16.9" r="15.9"></circle>
+                                 <circle class="circle-chart__circle total-stroke" stroke-dasharray="92,100" cx="16.9"
+                                    cy="16.9" r="15.9"></circle>
+                                 <g class="circle-chart__info"> <text class="circle-chart__percent" x="17.9"
+                                       y="15.5">92%</text></g>
+                              </svg>
+                           </div>
+
+                           <div class="total-result">
+                              <h1>Total Projects</h1>
+                              <h2>742</h2>
+                           </div>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+
+
+         </div>
+         <div class="latest-update">
+            <div class="panel">
+               <div class="header flex">
+                  <div class="menu-icon">
+                     <div class="dash-top"></div>
+                     <div class="dash-bottom"></div>
+                     <div class="circle circle-1"></div>
+                  </div>
+                  <span class="title">Notifications</span>
+               </div>
+
+               <div class="notifications clearfix">
+                  <div class="line"></div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <div class="notification-bg"><span class="time">9:24 AM</span>
+                        <p><b>John Walker</b> posted a photo on your wall.</p>
+                     </div>
+                  </div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <span class="time">8:19 AM</span>
+                     <p><b>Alice Parker</b> commented your last post.</p>
+                  </div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <span class="time">Yesterday</span>
+                     <p><b>Luke Wayne</b> followed you.</p>
+                  </div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <span class="time">Yesterday</span>
+                     <p><b>Luke Wayne</b> followed you.</p>
+                  </div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <span class="time">Yesterday</span>
+                     <p><b>Luke Wayne</b> followed you.</p>
+                  </div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <div class="notification-bg"><span class="time">9:24 AM</span>
+                        <p><b>John Walker</b> posted a photo on your wall.</p>
+                     </div>
+                  </div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <span class="time">8:19 AM</span>
+                     <p><b>Alice Parker</b> commented your last post.</p>
+                  </div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <span class="time">Yesterday</span>
+                     <p><b>Luke Wayne</b> followed you.</p>
+                  </div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <span class="time">Yesterday</span>
+                     <p><b>Luke Wayne</b> followed you.</p>
+                  </div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <span class="time">Yesterday</span>
+                     <p><b>Luke Wayne</b> followed you.</p>
+                  </div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <div class="notification-bg"><span class="time">9:24 AM</span>
+                        <p><b>John Walker</b> posted a photo on your wall.</p>
+                     </div>
+                  </div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <span class="time">8:19 AM</span>
+                     <p><b>Alice Parker</b> commented your last post.</p>
+                  </div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <span class="time">Yesterday</span>
+                     <p><b>Luke Wayne</b> followed you.</p>
+                  </div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <span class="time">Yesterday</span>
+                     <p><b>Luke Wayne</b> followed you.</p>
+                  </div>
+                  <div class="notification">
+                     <div class="circle"></div>
+                     <span class="time">Yesterday</span>
+                     <p><b>Luke Wayne</b> followed you.</p>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <div class="content-2">
+         <div class="box-wrapper-2">
+            <div class="earning-bar">
+               <div class="earning-header">
+                  <h1>Earning</h1>
+                  <button data-ui-toggle="my-dropdown" class="btn btn--md btn--primary btn--toggler">
+                     This Week
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        stroke-width="2.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 8.5l-7.25 7.25-7.25-7.25"></path>
+                     </svg>
+                  </button>
+
+                  <div data-ui-dropdown data-ui-dropdown-mode="absolute" class="dropdown" hidden id="my-dropdown">
+                     <div data-ui-dropdown-arrow class="dropdown-arrow"></div>
+                     <button class="dropdown-item" data-ui-dropdown-item>History</button>
+                     <button class="dropdown-item" data-ui-dropdown-item>Settings</button>
+                     <a href="#" class="dropdown-item" data-ui-dropdown-item>Sign Out</a>
+                  </div>
+
+               </div>
+               <div class="progress-wrapper"><img src="assets/imgs/dial-dashes.png" alt="">
+                  <div class="progress-shadow">
+                     <div class="ProgressCircle">
+                        <div class="circleBar">
+                           <!-- Container for circular progress bar -->
+                           <div class="container ">
+                              <div class="row align-items-center">
+                                 <div class="col-md-12">
+                                    <div class="round" data-value="0.100" data-size="141.28" data-thickness="10">
+                                       <strong></strong>
+                                    </div>
+                                 </div>
+
+                              </div>
+                           </div>
+
+
+
+                        </div>
+                        
+                     </div>
+                  </div>   
+                               
+
+               </div>
+               <div class="TotalEarning"><h1>Total Earning</h1></div> 
+               <div class="row">
+                  <div class="col-md-6 web-count">
+                     <div class="web-indicator"></div>
+                     <div>
+                        <h1>Website Dev</h1>
+                        <h2>251k</h2>
+                     </div>
+                  </div>
+                  <div class="col-md-6 logo-count">
+                     <div class="logo-indicator"></div>
+                     <div>
+                        <h1>Logo Design</h1>
+                        <h2>251k</h2>
+                     </div>
+                  </div>
+                  <div class=" col-md-6 ui-count">
+                     <div class="ui-indicator"></div>
+                     <div>
+                        <h1>UI Design</h1>
+                        <h2>251k</h2>
+                     </div>
+                  </div>
+                  <div class=" col-md-6 animation-count">
+                     <div class="animation-indicator"></div>
+                     <div>
+                        <h1>Animation</h1>
+                        <h2>251k</h2>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="visitor-counter">
+                  <div class="website-visitor"><h1>200</h1>
+                  <h2>Website Visitors</h2>
+               </div>
+               <div class="counter-divider"></div>
+               <div class="Leads-counter"><h1>115</h1>
+                  <h2>New Leads</h2>
+                  
+               </div>
+               </div>
+               
+            </div>
+            <div class="sales-graph">
+               <div class="graph-header">
+                  <div><h1>$800K</h1>
+                  <h2>Gross Sales</h2></div>
+                  <div class="graph-indicate">
+                     <div class="indicate-1">
+                        <div class="indication-color"></div>
+                        <h1>Sales</h1>
+                     </div>
+                     <div class="indicate-2">
+                        <div class="indication-color2"></div>
+                        <h1>Leads</h1>
+                     </div>
+                  </div>
+                  
+                  
+                  
+                  <button data-ui-toggle="my-dropdown" class="btn btn--md btn--primary btn--toggler">
+                     This Week
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        stroke-width="2.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 8.5l-7.25 7.25-7.25-7.25"></path>
+                     </svg>
+                  </button>
+
+                  <div data-ui-dropdown data-ui-dropdown-mode="absolute" class="dropdown" hidden id="my-dropdown">
+                     <div data-ui-dropdown-arrow class="dropdown-arrow"></div>
+                     <button class="dropdown-item" data-ui-dropdown-item>History</button>
+                     <button class="dropdown-item" data-ui-dropdown-item>Settings</button>
+                     <a href="#" class="dropdown-item" data-ui-dropdown-item>Sign Out</a>
+                  </div>
+               </div>
+               <div class="wrapper">
+
+                  <div id="chart">
+                  </div>
+
+
+                  <canvas id='c'></canvas>
+                  <div class="label">text</div>
+                </div>
+            </div>        
+      </div>
+      
+
+
+   </div>
+   <div class="projects-wrapper">
+      <div class="projects-header">
+         <div class="projects-title">
+            <h1>Projects</h1>
+            <!-- dropdown btn -->
+            <div class="ddown-p"> <button class="dd-btn">This Week</button>
+            <div class="ddown-p-content">
+               <div class="calendar">
+                  <div class="month"><a href="#" class="nav"><i class="fas fa-angle-left"></i></a><div>January <span class="year">2019</span></div><a href="#" class="nav"><i class="fas fa-angle-right"></i></a></div>
+                  <div class="days">
+                    <span>Mon</span>
+                    <span>Tue</span>
+                    <span>Wed</span>
+                    <span>Thu</span>
+                    <span>Fri</span>
+                    <span>Sat</span>
+                    <span>Sun</span>
+                  </div>
+                  <div class="dates">
+                      <button>
+                        <time>1</time>
+                      </button>
+                      <button>
+                        <time>2</time>
+                      </button>
+                      <button>
+                        <time>3</time>
+                      </button>
+                      <button>
+                        <time>4</time>
+                      </button>
+                      <button>
+                        <time>5</time>
+                      </button>
+                      <button>
+                        <time>6</time>
+                      </button>
+                      <button>
+                        <time>7</time>
+                      </button>
+                      <button>
+                        <time>8</time>
+                      </button>
+                      <button>
+                        <time>9</time>
+                      </button>
+                      <button>
+                        <time>10</time>
+                      </button>
+                      <button>
+                        <time>11</time>
+                      </button>
+                      <button>
+                        <time>12</time>
+                      </button>
+                      <button>
+                        <time>13</time>
+                      </button>
+                      <button>
+                        <time>14</time>
+                      </button>
+                      <button>
+                        <time>15</time>
+                      </button>
+                      <button>
+                        <time>16</time>
+                      </button>
+                      <button>
+                        <time>17</time>
+                      </button>
+                      <button class="today">
+                        <time>18</time>
+                      </button>
+                      <button>
+                        <time>19</time>
+                      </button>
+                      <button>
+                        <time>20</time>
+                      </button>
+                      <button>
+                        <time>21</time>
+                      </button>
+                      <button>
+                        <time>22</time>
+                      </button>
+                      <button>
+                        <time>23</time>
+                      </button>
+                      <button>
+                        <time>24</time>
+                      </button>
+                      <button>
+                        <time>25</time>
+                      </button>
+                      <button>
+                        <time>26</time>
+                      </button>
+                      <button>
+                        <time>27</time>
+                      </button>
+                      <button>
+                        <time>28</time>
+                      </button>
+                      <button>
+                        <time>29</time>
+                      </button>
+                      <button>
+                        <time>30</time>
+                      </button>
+                      <button>
+                        <time>31</time>
+                      </button>
+                  </div>
+                </div>
+            </div>
+            </div>         
+         </div>         
+      
+      
+      </div>
+      <section>
+         <div class="tbl-header">
+           <table cellpadding="0" cellspacing="0" border="0">
+             <thead>
+               <tr>
+                 <th>Project Title</th>
+                 <th>Starting Date</th>
+                 <th>Deadline</th>
+                 <th>Services</th>
+                 <th>Status</th>
+                 <th>Assign</th>
+               
+             </thead>
+           </table>
+         </div>
+         <div class="tbl-content">
+           <table cellpadding="0" cellspacing="0" border="0">
+             <tbody>
+               <tr>
+                  <td class="projects-title">Mockup Web Design</td>
+                  <td class="projects-dates">01-02-2023</td>
+                  <td class="projects-deadline">12-02-2023</td>
+                  <td class="projects-Service">Website</td>
+                  <td class="projects-status">Delivered</td>
+                  <td class="assign-person">
+                   <img src="assets/imgs/Persons-05-1.png" alt="">
+                   <img src="assets/imgs/Persons-05-2.png" alt="">
+                   <img src="assets/imgs/Persons-05-3.png" alt="">
+                   <img src="assets/imgs/Persons-05-4.png" alt="">
+                   <img src="assets/imgs/Persons-05.png" alt="">
+                   </td>                
+                   
+                  </tr>
+               <tr>
+                  <td class="projects-title">Mockup Web Design</td>
+                  <td class="projects-dates">01-02-2023</td>
+                  <td class="projects-deadline">12-02-2023</td>
+                  <td class="projects-Service">Website</td>
+                  <td class="projects-status">Delivered</td>
+                  <td class="assign-person">
+                   <img src="assets/imgs/Persons-05-1.png" alt="">
+                   <img src="assets/imgs/Persons-05-2.png" alt="">
+                   <img src="assets/imgs/Persons-05-3.png" alt="">
+                   <img src="assets/imgs/Persons-05-4.png" alt="">
+                   <img src="assets/imgs/Persons-05.png" alt="">
+                   </td>                
+                   
+                  </tr>
+               <tr>
+                  <td class="projects-title">Mockup Web Design</td>
+                  <td class="projects-dates">01-02-2023</td>
+                  <td class="projects-deadline">12-02-2023</td>
+                  <td class="projects-Service">Website</td>
+                  <td class="projects-status">Delivered</td>
+                  <td class="assign-person">
+                   <img src="assets/imgs/Persons-05-1.png" alt="">
+                   <img src="assets/imgs/Persons-05-2.png" alt="">
+                   <img src="assets/imgs/Persons-05-3.png" alt="">
+                   <img src="assets/imgs/Persons-05-4.png" alt="">
+                   <img src="assets/imgs/Persons-05.png" alt="">
+                   </td>                
+                   
+                  </tr>
+               <tr>
+                  <td class="projects-title">Mockup Web Design</td>
+                  <td class="projects-dates">01-02-2023</td>
+                  <td class="projects-deadline">12-02-2023</td>
+                  <td class="projects-Service">Website</td>
+                  <td class="projects-status">Delivered</td>
+                  <td class="assign-person">
+                   <img src="assets/imgs/Persons-05-1.png" alt="">
+                   <img src="assets/imgs/Persons-05-2.png" alt="">
+                   <img src="assets/imgs/Persons-05-3.png" alt="">
+                   <img src="assets/imgs/Persons-05-4.png" alt="">
+                   <img src="assets/imgs/Persons-05.png" alt="">
+                   </td>                
+                   
+                  </tr>
+               <tr>
+                  <td class="projects-title">Mockup Web Design</td>
+                  <td class="projects-dates">01-02-2023</td>
+                  <td class="projects-deadline">12-02-2023</td>
+                  <td class="projects-Service">Website</td>
+                  <td class="projects-status">Delivered</td>
+                  <td class="assign-person">
+                   <img src="assets/imgs/Persons-05-1.png" alt="">
+                   <img src="assets/imgs/Persons-05-2.png" alt="">
+                   <img src="assets/imgs/Persons-05-3.png" alt="">
+                   <img src="assets/imgs/Persons-05-4.png" alt="">
+                   <img src="assets/imgs/Persons-05.png" alt="">
+                   </td>                
+                   
+                  </tr>
+               <tr>
+                  <td class="projects-title">Mockup Web Design</td>
+                  <td class="projects-dates">01-02-2023</td>
+                  <td class="projects-deadline">12-02-2023</td>
+                  <td class="projects-Service">Website</td>
+                  <td class="projects-status">Delivered</td>
+                  <td class="assign-person">
+                   <img src="assets/imgs/Persons-05-1.png" alt="">
+                   <img src="assets/imgs/Persons-05-2.png" alt="">
+                   <img src="assets/imgs/Persons-05-3.png" alt="">
+                   <img src="assets/imgs/Persons-05-4.png" alt="">
+                   <img src="assets/imgs/Persons-05.png" alt="">
+                   </td>                
+                   
+                  </tr>
+               <tr>
+                  <td class="projects-title">Mockup Web Design</td>
+                  <td class="projects-dates">01-02-2023</td>
+                  <td class="projects-deadline">12-02-2023</td>
+                  <td class="projects-Service">Website</td>
+                  <td class="projects-status">Delivered</td>
+                  <td class="assign-person">
+                   <img src="assets/imgs/Persons-05-1.png" alt="">
+                   <img src="assets/imgs/Persons-05-2.png" alt="">
+                   <img src="assets/imgs/Persons-05-3.png" alt="">
+                   <img src="assets/imgs/Persons-05-4.png" alt="">
+                   <img src="assets/imgs/Persons-05.png" alt="">
+                   </td>                
+                   
+                  </tr>
+               <tr>
+                  <td class="projects-title">Mockup Web Design</td>
+                  <td class="projects-dates">01-02-2023</td>
+                  <td class="projects-deadline">12-02-2023</td>
+                  <td class="projects-Service">Website</td>
+                  <td class="projects-status">Delivered</td>
+                  <td class="assign-person">
+                   <img src="assets/imgs/Persons-05-1.png" alt="">
+                   <img src="assets/imgs/Persons-05-2.png" alt="">
+                   <img src="assets/imgs/Persons-05-3.png" alt="">
+                   <img src="assets/imgs/Persons-05-4.png" alt="">
+                   <img src="assets/imgs/Persons-05.png" alt="">
+                   </td>                
+                   
+                  </tr>
+               <tr>
+                  <td class="projects-title">Mockup Web Design</td>
+                  <td class="projects-dates">01-02-2023</td>
+                  <td class="projects-deadline">12-02-2023</td>
+                  <td class="projects-Service">Website</td>
+                  <td class="projects-status">Delivered</td>
+                  <td class="assign-person">
+                   <img src="assets/imgs/Persons-05-1.png" alt="">
+                   <img src="assets/imgs/Persons-05-2.png" alt="">
+                   <img src="assets/imgs/Persons-05-3.png" alt="">
+                   <img src="assets/imgs/Persons-05-4.png" alt="">
+                   <img src="assets/imgs/Persons-05.png" alt="">
+                   </td>                
+                   
+                  </tr>
+               <tr>
+                  <td class="projects-title">Mockup Web Design</td>
+                  <td class="projects-dates">01-02-2023</td>
+                  <td class="projects-deadline">12-02-2023</td>
+                  <td class="projects-Service">Website</td>
+                  <td class="projects-status">Delivered</td>
+                  <td class="assign-person">
+                   <img src="assets/imgs/Persons-05-1.png" alt="">
+                   <img src="assets/imgs/Persons-05-2.png" alt="">
+                   <img src="assets/imgs/Persons-05-3.png" alt="">
+                   <img src="assets/imgs/Persons-05-4.png" alt="">
+                   <img src="assets/imgs/Persons-05.png" alt="">
+                   </td>                
+                   
+                  </tr>                  
+               <tr>
+                  <td class="projects-title">Mockup Web Design</td>
+                  <td class="projects-dates">01-02-2023</td>
+                  <td class="projects-deadline">12-02-2023</td>
+                  <td class="projects-Service">Website</td>
+                  <td class="projects-status">Delivered</td>
+                  <td class="assign-person">
+                   <img src="assets/imgs/Persons-05-1.png" alt="">
+                   <img src="assets/imgs/Persons-05-2.png" alt="">
+                   <img src="assets/imgs/Persons-05-3.png" alt="">
+                   <img src="assets/imgs/Persons-05-4.png" alt="">
+                   <img src="assets/imgs/Persons-05.png" alt="">
+                   </td>                
+                   
+                  </tr>
+               <tr>
+                 <td class="projects-title">Mockup Web Design</td>
+                 <td class="projects-dates">01-02-2023</td>
+                 <td class="projects-deadline">12-02-2023</td>
+                 <td class="projects-Service">Website</td>
+                 <td class="projects-status">Delivered</td>
+                 <td class="assign-person">
+                  <img src="assets/imgs/Persons-05-1.png" alt="">
+                  <img src="assets/imgs/Persons-05-2.png" alt="">
+                  <img src="assets/imgs/Persons-05-3.png" alt="">
+                  <img src="assets/imgs/Persons-05-4.png" alt="">
+                  <img src="assets/imgs/Persons-05.png" alt="">
+                  </td>                
+                  
+                 </tr>
+                 
+               
+             </tbody>
+           </table>
+         </div>
+       </section>         
+     
+   </div>
+   
+
+   
+
+
+
+
+
+
+
+   <script id="rendered-js" type="module">
+      import { Dropdown } from "https://cdn.jsdelivr.net/npm/jolty/dist/jolty.esm.min.js";
+      Dropdown.initAll();
+
+      // Documentation
+      // https://jolty.dev/docs/dropdown
+
+   </script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
+   <script src="function.js"></script>
+
+   <script>
+      function CircleBar(e) {
+         $(e)
+            .circleProgress({ fill: { color: "#007DA5" } })
+            .on("circle-animation-progress", function (_event, _progress, stepValue) {
+               $(this)
+                  .find("strong")
+                  .text(String(parseInt(100 * stepValue)) + "%");
+            });
+      }
+      CircleBar(".round");
+   </script>
+
+   <script>
+      var label = document.querySelector(".label");
+var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+var cw = (c.width = 1104);
+var ch = (c.height = 525);
+var cx = cw / 2,
+  cy = ch / 2;
+var rad = Math.PI / 180;
+var frames = 0;
+
+ctx.lineWidth = 1;
+ctx.strokeStyle = "#999";
+ctx.fillStyle = "#ccc";
+ctx.font = "14px monospace";
+
+var grd = ctx.createLinearGradient(0, 0, 0, cy);
+grd.addColorStop(0, "hsla(167,72%,60%,1)");
+grd.addColorStop(1, "hsla(167,72%,60%,0)");
+
+var oData = {
+  2008: 10,
+  2009: 39.9,
+  2010: 17,
+  2011: 30.0,
+  2012: 5.3,
+  2013: 38.4,
+  2014: 15.7,
+  2015: 9.0
+};
+
+var valuesRy = [];
+var propsRy = [];
+for (var prop in oData) {
+  valuesRy.push(oData[prop]);
+  propsRy.push(prop);
+}
+
+var vData = 4;
+var hData = valuesRy.length;
+var offset = 50.5; //offset chart axis
+var chartHeight = ch - 2 * offset;
+var chartWidth = cw - 2 * offset;
+var t = 1 / 7; // curvature : 0 = no curvature
+var speed = 2; // for the animation
+
+var A = {
+  x: offset,
+  y: offset
+};
+var B = {
+  x: offset,
+  y: offset + chartHeight
+};
+var C = {
+  x: offset + chartWidth,
+  y: offset + chartHeight
+};
+
+/*
+      A  ^
+	    |  |  
+	    + 25
+	    |
+	    |
+	    |
+	    + 25  
+      |__|_________________________________  C
+      B
+*/
+
+// CHART AXIS -------------------------
+ctx.beginPath();
+ctx.moveTo(A.x, A.y);
+ctx.lineTo(B.x, B.y);
+ctx.lineTo(C.x, C.y);
+ctx.stroke();
+
+// vertical ( A - B )
+var aStep = (chartHeight - 50) / vData;
+
+var Max = Math.ceil(arrayMax(valuesRy) / 10) * 10;
+var Min = Math.floor(arrayMin(valuesRy) / 10) * 10;
+var aStepValue = (Max - Min) / vData;
+console.log("aStepValue: " + aStepValue); //8 units
+var verticalUnit = aStep / aStepValue;
+
+var a = [];
+ctx.textAlign = "right";
+ctx.textBaseline = "middle";
+for (var i = 0; i <= vData; i++) {
+  if (i == 0) {
+    a[i] = {
+      x: A.x,
+      y: A.y + 25,
+      val: Max
+    };
+  } else {
+    a[i] = {};
+    a[i].x = a[i - 1].x;
+    a[i].y = a[i - 1].y + aStep;
+    a[i].val = a[i - 1].val - aStepValue;
+  }
+  drawCoords(a[i], 3, 0);
+}
+
+//horizontal ( B - C )
+var b = [];
+ctx.textAlign = "center";
+ctx.textBaseline = "hanging";
+var bStep = chartWidth / (hData + 1);
+
+for (var i = 0; i < hData; i++) {
+  if (i == 0) {
+    b[i] = {
+      x: B.x + bStep,
+      y: B.y,
+      val: propsRy[0]
+    };
+  } else {
+    b[i] = {};
+    b[i].x = b[i - 1].x + bStep;
+    b[i].y = b[i - 1].y;
+    b[i].val = propsRy[i];
+  }
+  drawCoords(b[i], 0, 3);
+}
+
+function drawCoords(o, offX, offY) {
+  ctx.beginPath();
+  ctx.moveTo(o.x - offX, o.y - offY);
+  ctx.lineTo(o.x + offX, o.y + offY);
+  ctx.stroke();
+
+  ctx.fillText(o.val, o.x - 2 * offX, o.y + 2 * offY);
+}
+//----------------------------------------------------------
+
+// DATA
+var oDots = [];
+var oFlat = [];
+var i = 0;
+
+for (var prop in oData) {
+  oDots[i] = {};
+  oFlat[i] = {};
+
+  oDots[i].x = b[i].x;
+  oFlat[i].x = b[i].x;
+
+  oDots[i].y = b[i].y - oData[prop] * verticalUnit - 25;
+  oFlat[i].y = b[i].y - 25;
+
+  oDots[i].val = oData[b[i].val];
+
+  i++;
+}
+
+///// Animation Chart ///////////////////////////
+//var speed = 3;
+function animateChart() {
+  requestId = window.requestAnimationFrame(animateChart);
+  frames += speed; //console.log(frames)
+  ctx.clearRect(60, 0, cw, ch - 60);
+
+  for (var i = 0; i < oFlat.length; i++) {
+    if (oFlat[i].y > oDots[i].y) {
+      oFlat[i].y -= speed;
+    }
+  }
+  drawCurve(oFlat);
+  for (var i = 0; i < oFlat.length; i++) {
+    ctx.fillText(oDots[i].val, oFlat[i].x, oFlat[i].y - 25);
+    ctx.beginPath();
+    ctx.arc(oFlat[i].x, oFlat[i].y, 3, 0, 2 * Math.PI);
+    ctx.fill();
+  }
+
+  if (frames >= Max * verticalUnit) {
+    window.cancelAnimationFrame(requestId);
+  }
+}
+requestId = window.requestAnimationFrame(animateChart);
+
+/////// EVENTS //////////////////////
+c.addEventListener(
+  "mousemove",
+  function (e) {
+    label.innerHTML = "";
+    label.style.display = "none";
+    this.style.cursor = "default";
+
+    var m = oMousePos(this, e);
+    for (var i = 0; i < oDots.length; i++) {
+      output(m, i);
+    }
+  },
+  false
+);
+
+function output(m, i) {
+  ctx.beginPath();
+  ctx.arc(oDots[i].x, oDots[i].y, 20, 0, 2 * Math.PI);
+  if (ctx.isPointInPath(m.x, m.y)) {
+    //console.log(i);
+    label.style.display = "block";
+    label.style.top = m.y + 10 + "px";
+    label.style.left = m.x + 10 + "px";
+    label.innerHTML =
+      "<strong>" + propsRy[i] + "</strong>: " + valuesRy[i] + "%";
+    c.style.cursor = "pointer";
+  }
+}
+
+// CURVATURE
+function controlPoints(p) {
+  // given the points array p calculate the control points
+  var pc = [];
+  for (var i = 1; i < p.length - 1; i++) {
+    var dx = p[i - 1].x - p[i + 1].x; // difference x
+    var dy = p[i - 1].y - p[i + 1].y; // difference y
+    // the first control point
+    var x1 = p[i].x - dx * t;
+    var y1 = p[i].y - dy * t;
+    var o1 = {
+      x: x1,
+      y: y1
+    };
+
+    // the second control point
+    var x2 = p[i].x + dx * t;
+    var y2 = p[i].y + dy * t;
+    var o2 = {
+      x: x2,
+      y: y2
+    };
+
+    // building the control points array
+    pc[i] = [];
+    pc[i].push(o1);
+    pc[i].push(o2);
+  }
+  return pc;
+}
+
+function drawCurve(p) {
+  var pc = controlPoints(p); // the control points array
+
+  ctx.beginPath();
+  //ctx.moveTo(p[0].x, B.y- 25);
+  ctx.lineTo(p[0].x, p[0].y);
+  // the first & the last curve are quadratic Bezier
+  // because I'm using push(), pc[i][1] comes before pc[i][0]
+  ctx.quadraticCurveTo(pc[1][1].x, pc[1][1].y, p[1].x, p[1].y);
+
+  if (p.length > 2) {
+    // central curves are cubic Bezier
+    for (var i = 1; i < p.length - 2; i++) {
+      ctx.bezierCurveTo(
+        pc[i][0].x,
+        pc[i][0].y,
+        pc[i + 1][1].x,
+        pc[i + 1][1].y,
+        p[i + 1].x,
+        p[i + 1].y
+      );
+    }
+    // the first & the last curve are quadratic Bezier
+    var n = p.length - 1;
+    ctx.quadraticCurveTo(pc[n - 1][0].x, pc[n - 1][0].y, p[n].x, p[n].y);
+  }
+
+  //ctx.lineTo(p[p.length-1].x, B.y- 25);
+  ctx.stroke();
+  ctx.save();
+  ctx.fillStyle = grd;
+  ctx.fill();
+  ctx.restore();
+}
+
+function arrayMax(array) {
+  return Math.max.apply(Math, array);
+}
+
+function arrayMin(array) {
+  return Math.min.apply(Math, array);
+}
+
+function oMousePos(canvas, evt) {
+  var ClientRect = canvas.getBoundingClientRect();
+  return {
+    //objeto
+    x: Math.round(evt.clientX - ClientRect.left),
+    y: Math.round(evt.clientY - ClientRect.top)
+  };
+}
+
+   </script>
+
+   <!-- ///calender-drop/// -->
+   
+
+   
+
+</body>
+
+</html>
